@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CssFile/output.css">
+    <title>Weather App</title>
+</head>
+
+<body class="bg-weatherBackground w-full h-screen bg-cover bg-no-repeat">
+    <!-- forecastPart -->
+    <!-- <div class="">
+        <div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div> -->
+    <div class="flex flex-col container mx-auto  h-full items-center justify-center ">
+        <div
+            class="flex flex-col items-center space-y-3 border-2 border-blue-800 rounded-2xl  bg-blue-600/40 border-solid w-2/3 p-2 ">
+            <div class="text-center font-bold mb-8 mt-8 text-white text-4xl">WeatherApp</div>
+            <div class=" flex justify-center  w-full">
+                <input type="text" class="w-11/12 p-2 rounded-lg" name="" id="weatherInp">
+            </div>
+            <!-- date -->
+            <div
+                class="flex justify-around text-2xl w-11/12 text-center text-white font-semibold border-t-2 border-blue-600 border-solid border-b-2">
+                <span id="cityNam">Country/City</span>
+                <span id="Date">Date</span>
+            </div>
+            <div class="flex flex-col w-11/12 space-y-2">
+                <div class="flex  justify-around items-center">
+                    <img src="./images/CloudLOGO-removebg-preview.png" class="w-44 max-h-36 " alt="404 not-found">
+                    <p class="text-3xl text-center  text-white" id="Temp">--°C</p>
+                </div>
+                <div class="flex justify-around p-1 bg-blue-600 rounded-2xl">
+                    <label for="" class="font-semibold  text-white  text-lg">Humidity</label>
+                    <p class="text-lg text-center text-white">N / A</p>
+                </div>
+                <div class="flex justify-around p-1 bg-blue-600 rounded-2xl">
+                    <label for="" class="font-semibold  text-white  text-lg">FeelsLike</label>
+                    <p class="text-lg text-center text-white">N / A</p>
+                </div>
+                <div class="flex justify-around p-1 bg-blue-600 rounded-2xl">
+                    <label for="" class="font-semibold  text-white  text-lg">Pressure</label>
+                    <p class="text-lg text-center text-white">N / A</p>
+                </div>
+                <div class="">
+                    <button class="bg-blue-600 p-2 text-xl rounded-2xl text-white font-bold w-full " id="getWeather">Search</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./JSFile/app.mjs"></script>
+</body>
+
+</html>

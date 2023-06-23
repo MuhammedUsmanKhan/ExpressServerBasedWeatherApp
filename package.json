@@ -1,0 +1,22 @@
+{
+  "name": "deployingmyfirstserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs",
+    "dev": "nodemon server.mjs",
+    "devCss": "npx tailwindcss -i input.css -o ./staticWeatherApp/CssFile/output.css --watch",
+    "prodCss": "npx tailwindcss -i input.css -o ./staticWeatherApp/CssFile/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
